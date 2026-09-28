@@ -147,8 +147,8 @@ export default function About() {
       {analyticsEnabled() && <section className="space-y-2 text-sm leading-relaxed">
         <h2 className="text-lg font-semibold text-stone-900">瀏覽統計與隱私</h2>
         <p>
-          本站用 Google Analytics 統計瀏覽人數與熱門頁面。你按「同意」之前不會寫入 cookie，Google 只會收到不含 cookie
-          的匿名計數；按了才會用 cookie 做完整統計。本站不收集姓名、email 等個人資料，也沒有廣告。
+          本站用 Cloudflare Web Analytics 統計瀏覽人數與熱門頁面。它不使用 cookie、不追蹤個別訪客，本站也不收集姓名、email
+          等個人資料，沒有廣告。
         </p>
       </section>}
 
