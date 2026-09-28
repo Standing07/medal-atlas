@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { loadMedals, loadPace, SERIES_NAME, type MedalsData, type PaceData } from '../lib/data'
+import { analyticsEnabled } from '../lib/analytics'
 
 export default function About() {
   const [data, setData] = useState<MedalsData>()
@@ -142,6 +143,14 @@ export default function About() {
           <li>名稱使用各賽會的正式參賽名稱，不代表任何政治立場。</li>
         </ul>
       </section>
+
+      {analyticsEnabled() && <section className="space-y-2 text-sm leading-relaxed">
+        <h2 className="text-lg font-semibold text-stone-900">瀏覽統計與隱私</h2>
+        <p>
+          本站用 Google Analytics 統計瀏覽人數與熱門頁面。你按「同意」之前不會寫入 cookie，Google 只會收到不含 cookie
+          的匿名計數；按了才會用 cookie 做完整統計。本站不收集姓名、email 等個人資料，也沒有廣告。
+        </p>
+      </section>}
 
       <section className="space-y-2 text-sm leading-relaxed">
         <h2 className="text-lg font-semibold text-stone-900">已知限制</h2>

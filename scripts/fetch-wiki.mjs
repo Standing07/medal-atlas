@@ -102,6 +102,7 @@ export async function fetchLiveAt(title, cp) {
     title: p.title, pageid: p.pageid, revid: rev.revid, timestamp: rev.timestamp,
     checkpoint: cp.toISOString(), wikitext: rev.slots.main.content, fetchedAt: new Date().toISOString(),
   }
+  await mkdir(OUT, { recursive: true })
   await writeFile(fileFor(title), JSON.stringify(page))
   return page
 }

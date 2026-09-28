@@ -1,4 +1,7 @@
+import { useEffect } from 'react'
 import { Link, NavLink, Outlet, ScrollRestoration, useLocation } from 'react-router-dom'
+import ConsentBar from './ConsentBar'
+import { initAnalytics, trackPage } from '../lib/analytics'
 
 // 三個維度（國家、賽事、運動）共用同一個探索頁，只是預設篩選不同
 const NAV = [
@@ -22,6 +25,12 @@ function currentDim(pathname: string, search: string) {
 export default function Layout() {
   const loc = useLocation()
   const dim = currentDim(loc.pathname, loc.search)
+  useEffect(() => {
+    initAnalytics()
+  }, [])
+  useEffect(() => {
+    trackPage()
+  }, [loc.pathname, loc.search])
   return (
     <div className="min-h-screen">
       <ScrollRestoration />
@@ -56,6 +65,7 @@ export default function Layout() {
         獎牌數據整理自英文維基百科各屆獎牌表（CC BY-SA 4.0）；奧林匹克運動會另參考 Olympedia；進行中賽事以大會官方成績為準。
         本站為個人整理的開放資料專案，非任何賽會官方網站。
       </footer>
+      <ConsentBar />
     </div>
   )
 }

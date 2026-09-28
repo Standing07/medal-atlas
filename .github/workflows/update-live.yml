@@ -1,0 +1,41 @@
+# 進行中賽事的自動更新：每天台灣時間 23:55、05:55、11:55、17:55（UTC 15:55、21:55、03:55、09:55）
+# 抓維基最近一個更新時間點的版本 → 有變動才 commit → Zeabur 偵測到 push 自動重新部署。
+# 賽事閉幕兩天後 scripts/update-live.mjs 會自動不做事；要完全停用就刪掉這個檔案。
+name: 更新進行中賽事資料
+
+on:
+  schedule:
+    - cron: '55 3,9,15,21 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-live
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: 更新總表與分項
+        run: node scripts/update-live.mjs
+      - name: 更新每日累計（上屆同進度曲線）
+        run: node scripts/fetch-pace.mjs
+      - name: 有變動才 commit
+        run: |
+          if git diff --quiet -- public/data; then
+            echo "資料沒有變動"
+            exit 0
+          fi
+          git config user.name "medal-atlas-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data
+          git commit -m "自動更新進行中賽事資料 $(date -u +'%Y-%m-%d %H:%M') UTC"
+          git push
