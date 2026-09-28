@@ -1,0 +1,30 @@
+{
+  "name": "medal-atlas",
+  "description": "運動賽事獎牌地圖 Medal Atlas：奧運（全部）、亞運、泛美、大英國協、世大運、歐運、非運歷屆獎牌榜與各國消長；進行中賽事即時比較上屆同進度。",
+  "tech_stack": ["Vite 8", "React 19", "TypeScript", "Tailwind CSS 4", "ECharts 6", "flag-icons", "react-router (hash router)"],
+  "entry_points": {
+    "app": "src/main.tsx",
+    "pages": ["src/pages/Live.tsx", "src/pages/Games.tsx", "src/pages/Country.tsx", "src/pages/About.tsx"],
+    "shared_parser": "src/lib/wikiMedals.js（Node 資料腳本與瀏覽器共用）",
+    "countries": "src/lib/countries.js（代碼→中文名／國旗／歸併規則）"
+  },
+  "build": {
+    "install": "npm install",
+    "dev": "npm run dev（launch.json 名稱 medal-atlas，port 5260）",
+    "build": "npm run build",
+    "data": "npm run data:fetch && npm run data:pace && npm run data && npm run data:verify"
+  },
+  "architecture_notes": [
+    "資料來源＝英文維基百科各屆 medal table 頁（CC BY-SA），腳本讀 {{Medals table}} 模板；少數舊頁為手寫表格，用 parseWikitableMedals 備用解析。",
+    "scripts/series.mjs 定義各賽事屆次與頁名；LIVE 指定進行中的賽事。",
+    "scripts/fetch-pace.mjs 用維基歷史版本重建每日累計，逐日核對賽程表累計項目數。",
+    "scripts/verify.mjs 做第二來源查核：Olympedia（每次請求間隔 10 秒，遵守 robots.txt）＋維基近兩年變動偵測。",
+    "scripts/corrections.mjs 只放有官方來源的更正，每筆附來源與查證日。",
+    "data-raw/ 不進版控；public/data/*.json 是網站實際使用的清洗後資料。"
+  ],
+  "custom_instructions": [
+    "改動後跑 npm run build 驗證，並用 preview 實際開頁面檢查。",
+    "數字一律要有來源（CORE R2）；維基與官方不符時加進 corrections.mjs，不要直接改 JSON。",
+    "部署前先給 Sting 本地預覽並取得同意（CORE R1）。"
+  ]
+}

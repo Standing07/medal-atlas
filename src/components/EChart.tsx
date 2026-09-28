@@ -1,0 +1,53 @@
+import { useEffect, useRef } from 'react'
+// 只載入折線圖需要的模組，比整包 echarts 小很多
+import * as echarts from 'echarts/core'
+import { LineChart } from 'echarts/charts'
+import { GridComponent, LegendComponent, TooltipComponent } from 'echarts/components'
+import { LabelLayout } from 'echarts/features'
+import { CanvasRenderer } from 'echarts/renderers'
+import type { EChartsOption } from 'echarts'
+
+echarts.use([LineChart, GridComponent, LegendComponent, TooltipComponent, LabelLayout, CanvasRenderer])
+
+interface Props {
+  option: EChartsOption
+  className?: string
+  notMerge?: boolean
+  onClick?: (params: echarts.ECElementEvent) => void
+  onReady?: (chart: echarts.ECharts) => void
+}
+
+/** 通用 ECharts 包裝：自動掛載、更新與隨視窗縮放 */
+export default function EChart({ option, className, notMerge = false, onClick, onReady }: Props) {
+  const ref = useRef<HTMLDivElement>(null)
+  const chartRef = useRef<echarts.ECharts | null>(null)
+  const onClickRef = useRef(onClick)
+  onClickRef.current = onClick
+
+  useEffect(() => {
+    if (!ref.current) return
+    const chart = echarts.init(ref.current)
+    chartRef.current = chart
+    chart.on('click', (params) => onClickRef.current?.(params))
+    const resize = () => chart.resize()
+    window.addEventListener('resize', resize)
+    onReady?.(chart)
+    return () => {
+      window.removeEventListener('resize', resize)
+      chart.dispose()
+      chartRef.current = null
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  useEffect(() => {
+    // try/catch：圖表設定異常時只記錄錯誤，不讓整頁崩潰
+    try {
+      chartRef.current?.setOption(option, { notMerge })
+    } catch (err) {
+      console.error('EChart setOption failed:', err)
+    }
+  }, [option, notMerge])
+
+  return <div ref={ref} className={className} />
+}

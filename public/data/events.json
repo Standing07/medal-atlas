@@ -1,0 +1,360 @@
+[
+ {
+  "id": "1956-melbourne-hungary-protest",
+  "series": [
+   "summer-olympics"
+  ],
+  "from": 1956,
+  "to": 1956,
+  "codes": [
+   "NED",
+   "ESP",
+   "SUI"
+  ],
+  "zh": "荷蘭、西班牙、瑞士為抗議蘇聯出兵匈牙利，抵制 1956 年墨爾本奧林匹克運動會。",
+  "source": "https://en.wikipedia.org/wiki/List_of_Olympic_Games_boycotts",
+  "sourceTitle": "List of Olympic Games boycotts - Wikipedia"
+ },
+ {
+  "id": "1956-melbourne-suez-protest",
+  "series": [
+   "summer-olympics"
+  ],
+  "from": 1956,
+  "to": 1956,
+  "codes": [
+   "EGY",
+   "IRQ",
+   "LBN"
+  ],
+  "zh": "埃及、伊拉克、黎巴嫩為抗議蘇伊士運河危機，抵制 1956 年墨爾本奧林匹克運動會。",
+  "source": "https://en.wikipedia.org/wiki/List_of_Olympic_Games_boycotts",
+  "sourceTitle": "List of Olympic Games boycotts - Wikipedia"
+ },
+ {
+  "id": "1956-melbourne-china-withdrawal",
+  "series": [
+   "summer-olympics"
+  ],
+  "from": 1956,
+  "to": 1956,
+  "codes": [
+   "CHN"
+  ],
+  "zh": "中華人民共和國因抗議中華民國（台灣）獲准參賽，退出 1956 年墨爾本奧林匹克運動會。",
+  "source": "https://en.wikipedia.org/wiki/List_of_Olympic_Games_boycotts",
+  "sourceTitle": "List of Olympic Games boycotts - Wikipedia"
+ },
+ {
+  "id": "1962-jakarta-taiwan-excluded",
+  "series": [
+   "asian-games"
+  ],
+  "from": 1962,
+  "to": 1962,
+  "codes": [
+   "TPE"
+  ],
+  "zh": "1962 年雅加達亞洲運動會，地主國印尼基於政治因素拒發簽證，台灣（中華民國）代表隊未能參賽。",
+  "source": "https://en.wikipedia.org/wiki/Taiwan_at_the_Asian_Games",
+  "sourceTitle": "Taiwan at the Asian Games - Wikipedia"
+ },
+ {
+  "id": "1974-1986-taiwan-asian-games-absence",
+  "series": [
+   "asian-games"
+  ],
+  "from": 1974,
+  "to": 1986,
+  "codes": [
+   "TPE",
+   "CHN"
+  ],
+  "zh": "中華人民共和國於 1973 年獲亞洲運動會總會接納後，台灣（中華民國）遭除名，1974 年至 1986 年間未參加亞洲運動會。",
+  "source": "https://en.wikipedia.org/wiki/Taiwan_at_the_Asian_Games",
+  "sourceTitle": "Taiwan at the Asian Games - Wikipedia"
+ },
+ {
+  "id": "1976-montreal-african-boycott",
+  "series": [
+   "summer-olympics"
+  ],
+  "from": 1976,
+  "to": 1976,
+  "codes": [
+   "TAN",
+   "KEN",
+   "GHA",
+   "EGY",
+   "ETH",
+   "ALG"
+  ],
+  "zh": "多個非洲國家為抗議紐西蘭橄欖球隊訪問種族隔離時期的南非，抵制 1976 年蒙特婁奧林匹克運動會。",
+  "source": "https://en.wikipedia.org/wiki/List_of_Olympic_Games_boycotts",
+  "sourceTitle": "List of Olympic Games boycotts - Wikipedia"
+ },
+ {
+  "id": "1976-montreal-taiwan-non-participation",
+  "series": [
+   "summer-olympics"
+  ],
+  "from": 1976,
+  "to": 1976,
+  "codes": [
+   "TPE"
+  ],
+  "zh": "地主國加拿大以其承認中華人民共和國為由，不允許中華民國代表隊以「中華民國」名義參賽，台灣因而未參加 1976 年蒙特婁奧林匹克運動會。",
+  "source": "https://en.wikipedia.org/wiki/Chinese_Taipei_at_the_Olympics",
+  "sourceTitle": "Chinese Taipei at the Olympics - Wikipedia"
+ },
+ {
+  "id": "1980-moscow-us-led-boycott",
+  "series": [
+   "summer-olympics"
+  ],
+  "from": 1980,
+  "to": 1980,
+  "codes": [
+   "USA",
+   "CAN",
+   "JPN",
+   "FRG",
+   "CHN",
+   "KEN"
+  ],
+  "zh": "美國號召多國為抗議蘇聯入侵阿富汗，抵制 1980 年莫斯科奧林匹克運動會。",
+  "source": "https://en.wikipedia.org/wiki/List_of_Olympic_Games_boycotts",
+  "sourceTitle": "List of Olympic Games boycotts - Wikipedia"
+ },
+ {
+  "id": "1980-taiwan-non-participation",
+  "series": [
+   "summer-olympics",
+   "winter-olympics"
+  ],
+  "from": 1980,
+  "to": 1980,
+  "codes": [
+   "TPE"
+  ],
+  "zh": "因名稱問題尚未解決，中華民國代表隊未參加 1980 年普萊西德湖冬季奧林匹克運動會及莫斯科夏季奧林匹克運動會。",
+  "source": "https://en.wikipedia.org/wiki/Chinese_Taipei_at_the_Olympics",
+  "sourceTitle": "Chinese Taipei at the Olympics - Wikipedia"
+ },
+ {
+  "id": "1981-lausanne-resolution-chinese-taipei",
+  "series": [
+   "summer-olympics",
+   "winter-olympics"
+  ],
+  "from": 1984,
+  "to": 1984,
+  "codes": [
+   "TPE"
+  ],
+  "zh": "1981 年洛桑協議簽署後，台灣代表隊自 1984 年塞拉耶佛冬季奧林匹克運動會起，以「中華台北」名稱、會旗及會歌參賽。",
+  "source": "https://en.wikipedia.org/wiki/Chinese_Taipei_at_the_Olympics",
+  "sourceTitle": "Chinese Taipei at the Olympics - Wikipedia"
+ },
+ {
+  "id": "1984-la-soviet-led-boycott",
+  "series": [
+   "summer-olympics"
+  ],
+  "from": 1984,
+  "to": 1984,
+  "codes": [
+   "URS",
+   "GDR",
+   "BUL",
+   "CUB",
+   "PRK",
+   "MGL",
+   "VIE"
+  ],
+  "zh": "蘇聯號召東歐集團與部分盟邦，為報復 1980 年美國號召的抵制，抵制 1984 年洛杉磯奧林匹克運動會。",
+  "source": "https://en.wikipedia.org/wiki/List_of_Olympic_Games_boycotts",
+  "sourceTitle": "List of Olympic Games boycotts - Wikipedia"
+ },
+ {
+  "id": "1988-seoul-boycott",
+  "series": [
+   "summer-olympics"
+  ],
+  "from": 1988,
+  "to": 1988,
+  "codes": [
+   "PRK",
+   "CUB",
+   "ETH",
+   "MAD",
+   "NCA",
+   "ALB",
+   "SEY"
+  ],
+  "zh": "北韓因未能獲准共同主辦而抵制 1988 年漢城（首爾）奧林匹克運動會，古巴、衣索比亞、馬達加斯加、尼加拉瓜、阿爾巴尼亞、塞席爾響應。",
+  "source": "https://en.wikipedia.org/wiki/List_of_Olympic_Games_boycotts",
+  "sourceTitle": "List of Olympic Games boycotts - Wikipedia"
+ },
+ {
+  "id": "south-africa-apartheid-exclusion",
+  "series": [
+   "summer-olympics"
+  ],
+  "from": 1964,
+  "to": 1992,
+  "codes": [
+   "RSA"
+  ],
+  "zh": "南非因種族隔離政策，自 1964 年起遭排除於奧林匹克運動會之外，1970 年正式被國際奧會除名，直至 1992 年巴塞隆納奧林匹克運動會才重返賽場。",
+  "source": "https://en.wikipedia.org/wiki/South_Africa_at_the_Olympics",
+  "sourceTitle": "South Africa at the Olympics - Wikipedia"
+ },
+ {
+  "id": "germany-united-team-1956-1964",
+  "series": [
+   "summer-olympics",
+   "winter-olympics"
+  ],
+  "from": 1956,
+  "to": 1964,
+  "codes": [
+   "EUA",
+   "FRG",
+   "GDR"
+  ],
+  "zh": "東西德在 1956 年至 1964 年間以「德國聯隊」名義共組單一代表隊參加奧林匹克運動會。",
+  "source": "https://en.wikipedia.org/wiki/United_Team_of_Germany",
+  "sourceTitle": "United Team of Germany - Wikipedia"
+ },
+ {
+  "id": "germany-split-teams-1968-1988",
+  "series": [
+   "summer-olympics",
+   "winter-olympics"
+  ],
+  "from": 1968,
+  "to": 1988,
+  "codes": [
+   "FRG",
+   "GDR"
+  ],
+  "zh": "1968 年起東西德分別組隊參賽，1972 年起完全使用各自國旗、國歌，直至 1990 年兩德統一。",
+  "source": "https://en.wikipedia.org/wiki/United_Team_of_Germany",
+  "sourceTitle": "United Team of Germany - Wikipedia"
+ },
+ {
+  "id": "germany-reunified-1992",
+  "series": [
+   "summer-olympics",
+   "winter-olympics"
+  ],
+  "from": 1992,
+  "to": 1992,
+  "codes": [
+   "GER"
+  ],
+  "zh": "兩德統一後，德國自 1992 年起以單一代表隊「GER」重新參加奧林匹克運動會。",
+  "source": "https://en.wikipedia.org/wiki/United_Team_of_Germany",
+  "sourceTitle": "United Team of Germany - Wikipedia"
+ },
+ {
+  "id": "2018-pyeongchang-korea-hockey",
+  "series": [
+   "winter-olympics"
+  ],
+  "from": 2018,
+  "to": 2018,
+  "codes": [
+   "PRK",
+   "KOR"
+  ],
+  "zh": "南北韓組成聯隊「Korea」（代碼 COR），參加 2018 年平昌冬季奧林匹克運動會女子冰球項目。",
+  "source": "https://en.wikipedia.org/wiki/Korea_at_the_2018_Winter_Olympics",
+  "sourceTitle": "Korea at the 2018 Winter Olympics - Wikipedia"
+ },
+ {
+  "id": "2018-asian-games-korea-joint-teams",
+  "series": [
+   "asian-games"
+  ],
+  "from": 2018,
+  "to": 2018,
+  "codes": [
+   "PRK",
+   "KOR"
+  ],
+  "zh": "南北韓於 2018 年雅加達－巨港亞洲運動會的女子籃球、輕艇及划船項目組成聯合代表隊。",
+  "source": "https://en.wikipedia.org/wiki/North_Korea_at_the_2018_Asian_Games",
+  "sourceTitle": "North Korea at the 2018 Asian Games - Wikipedia"
+ },
+ {
+  "id": "2020-tokyo-covid-postponement",
+  "series": [
+   "summer-olympics"
+  ],
+  "from": 2020,
+  "to": 2021,
+  "codes": [],
+  "zh": "受COVID-19 疫情影響，東京奧林匹克運動會自原訂 2020 年 7月延後一年，於 2021 年 7月 23日至 8月 8日舉行，仍沿用「東京 2020」名稱。",
+  "source": "https://en.wikipedia.org/wiki/2020_Summer_Olympics",
+  "sourceTitle": "2020 Summer Olympics - Wikipedia"
+ },
+ {
+  "id": "2022-hangzhou-covid-postponement",
+  "series": [
+   "asian-games"
+  ],
+  "from": 2022,
+  "to": 2023,
+  "codes": [],
+  "zh": "受COVID-19 疫情影響，杭州亞洲運動會自原訂 2022 年 9月延後至 2023 年 9月 23日至 10月 8日舉行，仍沿用「杭州 2022」名稱。",
+  "source": "https://en.wikipedia.org/wiki/2022_Asian_Games",
+  "sourceTitle": "2022 Asian Games - Wikipedia"
+ },
+ {
+  "id": "2018-pyeongchang-oar",
+  "series": [
+   "winter-olympics"
+  ],
+  "from": 2018,
+  "to": 2018,
+  "codes": [
+   "RUS"
+  ],
+  "zh": "因俄羅斯國家支持運動禁藥醜聞，其選手於 2018 年平昌冬季奧林匹克運動會僅能以「俄羅斯奧林匹克運動員」（OAR）中立名義參賽。",
+  "source": "https://en.wikipedia.org/wiki/Russia_at_the_Olympics",
+  "sourceTitle": "Russia at the Olympics - Wikipedia"
+ },
+ {
+  "id": "2020-2022-roc",
+  "series": [
+   "summer-olympics",
+   "winter-olympics"
+  ],
+  "from": 2020,
+  "to": 2022,
+  "codes": [
+   "RUS"
+  ],
+  "zh": "禁藥制裁持續，俄羅斯選手於 2020 年東京奧林匹克運動會及 2022 年北京冬季奧林匹克運動會以「俄羅斯奧林匹克委員會」（ROC）名義參賽，不得使用國旗國歌。",
+  "source": "https://en.wikipedia.org/wiki/Russia_at_the_Olympics",
+  "sourceTitle": "Russia at the Olympics - Wikipedia"
+ },
+ {
+  "id": "2024-2026-ain",
+  "series": [
+   "summer-olympics",
+   "winter-olympics"
+  ],
+  "from": 2024,
+  "to": 2026,
+  "codes": [
+   "RUS",
+   "BLR"
+  ],
+  "zh": "因俄羅斯入侵烏克蘭，俄羅斯與白俄羅斯選手於 2024 年巴黎奧林匹克運動會及 2026 年米蘭－科爾蒂納冬季奧林匹克運動會僅能以「個人中立運動員」（AIN）身分參賽，且僅限個人項目。",
+  "source": "https://en.wikipedia.org/wiki/Russia_at_the_Olympics",
+  "sourceTitle": "Russia at the Olympics - Wikipedia"
+ }
+]
