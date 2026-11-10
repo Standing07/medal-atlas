@@ -1,0 +1,10 @@
+// Cloudflare Workers 靜態網站設定（2026-11-10 從 Zeabur 搬來）
+// Cloudflare 連 GitHub 後，每次 push 到 main 會自動：npm install → npm run build → npx wrangler deploy
+// 只放靜態檔案，沒有後端程式；找不到的檔案回 404（網站用 # 路由，不需要轉址設定）
+{
+  "name": "medal-atlas",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./dist"
+  }
+}
